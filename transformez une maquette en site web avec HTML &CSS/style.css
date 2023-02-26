@@ -1,0 +1,2333 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div,span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family:"Raleway";
+    src:url("Raleway");
+
+}
+:root
+{
+    --blue:#0065FC;
+    --light-blue:#DEEBFF;
+    --white:#FFFF;
+    --grey:#F2F2F2;
+
+}
+/*nav*/
+
+ nav a
+ {
+    text-decoration: none;
+    color:#000000;
+    padding: 2rem;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+
+ }
+ /*autres regles si largeur est inférieur à 768px */
+ @media all and (max-device-width:768px) {
+    nav a
+    {
+       text-decoration: none;
+       color:#000000;
+       padding: 2rem;
+       font-family: "Raleway";
+       font-size: 16px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 19px;
+       text-align: center;
+       width:50%;
+       
+       
+ }
+}
+ /*regles par défaut*/
+
+
+ nav
+ {
+     
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    
+ }
+
+ /*si largeur est inférieur ou égal à 768px*/
+ @media all and (max-device-width:768px) {
+    nav 
+    {
+        
+        display:block;
+        flex-wrap: wrap;
+        margin-top: 37px;
+        margin-bottom: 50px;
+        background: #FFFFFF;
+        text-align: center;
+    }
+    
+ }
+ /* valeur par défaut */
+ nav a:hover{
+    border-top: 3px solid #0065FC;
+    color:#0065FC;
+ }
+ 
+ /*si largeur est inférieur à 768 px */
+ @media all and (max-device-width:768px) {
+    nav a:hover 
+    {
+        border-bottom: 3px solid #0065FC;
+        border-top:none;
+    }
+    
+ }
+ .logo
+ {
+    
+    margin-right:auto ;
+    
+    
+ }
+ /*si largeur esr inférieur 768px */
+ @media all and (max-device-width:768px) {
+    .logo{
+
+        padding:2rem;
+    }
+    
+ }
+.nav_link
+{
+    display: flex;
+    justify-content: flex-end;
+    border-top:3px solid #F2F2F2;
+    
+}
+/*si largeur est inf à 768px*/
+@media all and (max-device-width:768px) {
+    .nav_link
+    {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        border-bottom: 5px solid #F2F2F2;
+        border-top:none;
+        
+    }
+    
+    
+}
+h1
+{
+width:575px;
+height: 26px;
+font-size: 22px;
+font-weight: 700;
+line-height: 26px;
+margin-top: 63px;
+font-family: 'Raleway';
+color:#000000;
+margin-right: 810px;
+
+
+}
+/* pour tablette */
+
+@media (min-width:768px) and (max-width:992px) {
+
+    h1
+    {
+    width:100%;
+    height: auto;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 62.32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    color:#000000;
+    padding-right: 377px;
+    
+    }
+    }
+@media all and (max-device-width:768px) {
+
+h1
+{
+
+font-size: 22px;
+font-weight: 700;
+line-height: 26px;
+margin-top: 163px;
+font-family: 'Raleway';
+display: flex;
+align-content: stretch;
+color: #000000;
+margin:0 auto;
+
+}
+}
+.center_city
+{
+    width: 296px;
+    height: 19px;
+    margin-top: 8px;
+    margin-bottom: 34px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color:#000000;
+}
+/*si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+    .center_city
+{
+    width: auto;
+    height: 19px;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 34px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color:#000000;
+
+    
+}
+
+}
+/* si largeur est supérieur à 992px */
+.search_form
+    {
+        display: flex;
+        margin-right: 967px;
+        
+    }
+
+/* si largeur entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px) {
+
+.search_form
+    {
+        display: flex;
+        margin-right: 515px;
+    }
+
+    
+}
+
+
+/*si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+    .search_form
+    {
+         width: 90%;
+         height: auto;
+        display: flex;
+        margin-top: 50px;
+        
+    }
+
+    
+}
+.search_form i
+{
+    width: 14px;
+    height: 16px;
+    background-color:#F2F2F2;
+    border:1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+     padding: 1.1rem 1.5rem;
+     
+     
+}
+.search_form input
+{   width:332px;
+    height: 49px;
+    text-align: center;
+    border-left: none;
+    border:1px solid #F2F2F2;
+}
+    /*valeur si largeur est inférieur à 768px */
+    
+@media all and (max-device-width:768px) {
+
+    .search_form input
+{   width:100%;
+    height: auto;
+    text-align: center;
+    border-left: none;
+    border:1px solid #F2F2F2;
+    padding-left: 16px;
+    padding-right: 68px;
+}
+}
+.search_form input::placeholder
+{
+    width: 147px;
+    height: 49px;
+    padding-top: 14px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    line-height: 21.13px;
+    color:#000000;
+    font-family: 'Raleway';
+    
+    
+}
+/*si device inférieur à 768px */
+@media all and (max-device-width:768px) {
+    .search_form input::placeholder
+    {
+        width:100%;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    line-height: 21px;
+    color:#000000;
+    font-family: 'Raleway';
+    margin-left: 16px;
+
+    
+    }
+    
+}
+/*regle par défaut */
+.search_form button
+{
+    width: hug(132px);
+    height: 52px;
+ background-color: #0065FC;
+  color :#FFFFFF;
+  border:1px solid grey;
+ border-radius: 0 15px 15px 0; 
+ border-left: none; 
+ padding-left: 16px;
+ padding-right: 16px;
+ cursor: pointer;
+ 
+ 
+}
+/*si device inférieur à 768px */
+@media all and (max-device-width:768px) {
+    .search_form button
+    {
+
+    width:auto;
+    height: auto;
+    margin-left: 0%;
+    
+    }
+    
+}
+/*regles si device supérieur à 768px */
+.text_ button
+{
+     width:hug(100px);
+     height: hug(21px);
+    display: flex;
+}
+/*autres regles si device inférieur à 768 px */
+@media all and (max-device-width:768px) {
+    
+ .text_button
+ {
+    display:none ;
+
+ }
+}
+button:hover
+{
+    transform: scale(1.02);
+}
+/*information d'autres logements */
+.number_loge i{
+    width: 4px;
+    height: 10px;
+    
+}
+.number_loge
+{
+    width:447px;
+    height: 19px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Raleway' ;
+    line-height: 19px;
+    font-weight: 400;
+    color:#000000;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 37px;
+    
+}
+ /*si largeur est inférieur à 768px */
+ @media all and (max-device-width:768px) {
+    
+ 
+ .number_loge
+ {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Raleway' ;
+    line-height: 19px;
+    font-weight: 400;
+    color:#000000;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 37px;
+    
+ }
+}
+.logements
+{
+    width: 412px;
+    height: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 11px;
+    margin-bottom: 37px;
+    font-family: 'Raleway';
+    font-style: normal;
+    color:#000000;
+    
+}
+/* si device supérieur à 768 px */
+.fa-solid.fa-magnifying-glass
+{
+     background:#0065FC;
+    display: none;
+    border: none;
+    
+}
+/* autres regles si device inférieur à 768 px */
+@media all and (max-device-width:768px) {
+    .fa-solid.fa-magnifying-glass
+    {
+        display: inline;
+        
+        
+        
+       
+    }
+    
+    }
+    /*list des filtres */
+    .filtres_icones
+    {
+         width:95%;
+         height: 50px;;
+        display: flex;
+        
+        align-items: center;
+        margin-top: 46px;
+    }
+    /*si largeur est inférieur à 768px*/
+    @media all and (max-device-width:768px) {
+        .filtres_icones
+        {  width: 100%;
+            height: auto;
+            display:flex;
+            flex-wrap: wrap;
+            background: #FFFFFF;
+        }
+        
+    }
+    /*valeur par défaut*/
+    .icon
+    {
+         width:70%;
+         height: 50px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+    }
+    /*autres règles si largeur est inférieur à 768px*/
+    @media all and (max-device-width:768px) {
+        .icon{
+            width:95%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 0px;
+        }
+        
+    }
+    /*valeur par défaut*/
+    .type_filtre
+    {    width:auto;
+        height: auto;
+         display: flex;
+         align-items: center;
+        background: #FFFFFF;
+        border: 2px solid #D9D9D9;
+        border-radius: 25px;
+      
+    }
+    /*si largeur est inférieur à 768px */
+    @media all and (max-device-width:768px) {
+        .type_filtre
+        {
+            width: 45%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 46px;
+        }
+        
+    }
+    .type_filtre i{
+        color:#0065FC;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .type_filtre span
+    {
+        width:95%;
+        height: auto;
+        font-family: 'raleway''sans-serif';
+        font-size: 18px;
+        color:#000000;
+    }
+   
+      .filtres_icones h2
+    {   
+        
+        font-size: 18px;
+        font-family: 'Raleway' 'sans-serif';
+        font-weight: 700;
+        line-height: 21;
+        font-style:normal;
+        color:#000000;
+        margin: 30px;
+        
+        
+        
+        
+        
+        
+        
+    }
+    /*autres regles si largeur est inférieur à 768px */
+    @media all and (max-device-width:768px) {
+        form h2 
+        {
+            font-size: 18px;
+            font-family: 'Raleway' 'sans-serif';
+            font-weight: 700;
+            line-height: 21;
+            font-style:normal;
+            color:#000000;
+            padding:0;
+        
+            
+
+            
+            
+            
+        }
+        
+    }
+
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.info i
+{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #0065FC;
+        font-size: 0.9em;
+        padding: 10px;
+        border: 2px solid #DEEBFF;
+        border-radius: 50%;
+        margin-right: 10px;  
+        width:5px;
+        height: 5px;
+    }
+    
+
+
+body
+{
+   max-width: 1440px;
+    width:95%;
+    margin:0 auto;
+    overflow-x:hidden;  
+    
+    
+    
+}
+/*si width entre 768px et 992px*/
+@media (min-width:768px) and (max-width:992px) {
+    
+    body
+    {
+        
+        
+        width:95%;
+        height:auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0 auto;
+    
+        
+        
+        
+    }
+    }
+/* si device est inférieur 768px */
+@media all and (max-device-width:768px) {
+
+    body 
+    {
+  width: 100%;
+  background: #F0F2F6;
+  margin:0 auto;
+  overflow-x:hidden;
+  
+   
+    }
+}
+
+/*si width est supérieur à 992px */
+header
+{
+    width:95%;
+    height:100%;
+}
+/*si largeur est inférieur à 992px */
+@media (min-width:768px) and (max-width:992px) {
+    header{
+        
+        width: 95%;
+        height: 100%;
+        margin-left: 72px;
+        
+    }
+    
+}
+/*si largeur est inférieur à 768 px */
+@media all and (max-device-width:768px) {
+    header 
+    {
+        width:95%;
+        height:auto;
+        margin:0 auto;
+        background: #FFFFFF;
+        padding-bottom:20px;
+        margin-bottom: 40px;
+        padding-left: 20px;
+    }
+    
+}
+
+
+/*hébertgement marseille */
+ 
+
+.hébergement_marseille
+{
+    width:880px ;
+    height:638px ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+/*si largeur entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px) {
+    .hébergement_marseille
+{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+    
+}
+/* si device est inférieur à 768px */
+@media all and (max-device-width:768px) {
+    .hébergement_marseille
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background: #FFFFFF;
+        
+       
+    }
+    
+}
+.hébergement_marseille h3
+{
+    width:auto;
+    height: 26px;
+    font-family: 'Raleway';
+    font-size: 22px;
+    font-style: normal;
+    line-height: 26px;
+    font-weight: 700;
+    color:#000000;
+    margin-left: 40px;
+    margin-top: 42px;
+    margin-bottom: 23px;
+    
+}
+
+#list_appartement
+{   width:95%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: baseline;
+    
+    
+    
+}
+
+  /*lorsque device entre 768px et 992px */
+    @media (min-width:768px) and (max-width:992px) {
+    
+ #list_appartement
+ {
+    width: 95%;
+    display: flex;
+    display:block;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+ }
+    }
+ /* lorsque device est inférieur à 768 px */
+@media all and (max-device-width:768px) {
+    #list_appartement
+    {
+        width:100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin:0 auto;
+        
+        
+    
+    }
+    
+}
+.list_room h2
+{
+width: 107px;
+height: 21px;
+font-size: 18px;
+line-height: 21px;
+font-family: 'Raleway';
+font-weight: 700;
+color: #000000 ;
+margin-left: 44px;
+margin-bottom: 46px;
+cursor: pointer;
+}
+  
+section
+{
+    
+    width: 880px;
+    height: 626px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin-bottom: 53px;
+    margin-right:40px;
+    justify-content: space-between;
+    padding-bottom: 36px;
+    
+    
+}
+    /*valeur lorsque largeur d'écran entre 768px et 992px*/
+    @media (min-width:768px) and (max-width:992px) {
+        
+        section{
+            
+            width: 100%;
+            height:100%;
+            background: #F2F2F2;
+            border-radius: 20px;
+            margin-bottom: 53px;
+            justify-content: space-between;
+            padding-bottom: 46px;
+           
+
+         }
+    }
+/* si device est inferieur à 768 px */
+@media all and (max-device-width:768px) {
+    section 
+    {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        background: #FFFFFF;
+        
+    }
+    
+}
+ aside
+ {
+    width: 420;
+    height: 628px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding-bottom: 34px;
+    padding-left: 0px;
+    margin-right: 50px;
+    
+ }
+
+   /*pour device entre 768 px et 992px*/
+   @media (min-width:768px) and (max-width:992px) {
+      aside 
+       {
+        background: #F2F2F2;
+        width: 100%;
+         height: auto;
+         margin-bottom: 70px;
+         margin-top: 42px;
+         padding-bottom: 34px;
+         padding-top: 0px;
+         margin:0 auto;
+      }
+      
+   }
+ 
+ /*si device inférieur à 768px*/
+ @media all and (max-device-width:768px) {
+   aside 
+   {
+    width: 100%;
+    height: auto;
+    background: #F2F2F2;
+    padding-top: 28px;
+    padding-bottom: 47px;
+    margin-bottom:20 px;
+    margin: 0 auto;
+    
+      
+
+      
+   }
+   
+ }
+  
+
+
+.list_room
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 61px;
+    
+
+    
+}
+/*si device inférieur à 768 px */
+@media all and (max-device-width:768px) {
+    .list_room
+    {
+         width:100%;
+         height: auto  ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    
+}
+.list_room a
+{
+    text-decoration: none;
+    color: #000000;
+    
+}
+/*valeur par défaut */
+.card
+{
+width: 246px;
+height: 199px;
+background: #FFFFFF;
+border-radius: 20px;
+padding: 0;
+margin-bottom: 30px;
+padding-bottom: 11px;
+cursor:pointer;
+
+}
+/*valeur si largeur entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px){
+.card
+{
+width:30%;
+height: auto;
+background: #FFFFFF;
+border: 5px solid #FFFFFF;
+border-radius: 20px;
+padding: 0%;
+margin-bottom: 30px;
+   
+}
+}
+
+/*autres valeur si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+.card
+{
+width: 90%;
+height: auto;
+background: #F2F2F2;
+padding: 0%;
+margin-bottom: 30px;
+ 
+}
+}
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card h3{
+    width: 204px;
+    height: 15px;
+    left:16px;
+    top:calc(50%-15px/2+36px);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color:#000000;
+    margin: 5px;
+}
+.card >div
+{
+     border:5px solid #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+    background: #FFFFFF;
+}
+.card img
+{ border:5px solid red;
+    border-radius: 20px 20px 0px 0px;
+margin-left:0;
+}
+.price{
+  width: 204px;  
+  height: 15px;
+  font-family: 'raleway' 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  margin-left: 5px;
+  color: #000000;
+
+}
+
+.all_stars
+{
+     
+     display:flex;
+     margin-left:5px;
+    flex-wrap: nowrap;
+    margin-bottom: 11px;
+    margin-top: 9px;
+    justify-content: flex-start;
+    
+    
+    
+
+}
+
+.star1{
+    color:#0065FC;
+}
+.star2
+{
+    color:#D9D9D9;
+ 
+}
+/*valeur par défaut */
+.card img
+{
+    box-sizing: border-box;
+    width:246px;
+    height:124px;
+    background: #FFFFFF;
+    border:5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+     margin-top:0px;
+     margin-left:0px;
+}
+    
+ /*si largeur entre 768px et 992px */
+ @media (min-width:768px) and (max-width:992px) {
+   
+.card img
+{
+    box-sizing: border-box;
+    width:100%;
+    height:auto;
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+     margin-top:0px;
+     margin-left:0px;
+}
+ 
+}
+
+/*si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+.card img
+{
+    box-sizing: border-box;
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+     margin-top:0px;
+     margin-left:0px;
+    
+ 
+}
+    
+}
+
+.populaire h3
+{
+     width: auto;
+     height: 26px;
+    color:#000000;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-left:20px;
+    margin-top: 41px;
+    margin-bottom: 36px;
+    margin-right: 21px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    
+}
+
+    
+    
+    
+.populaire h3 i
+{
+    color: #0065FC;
+    width: 18px;
+    height: 15.75px;
+        
+    
+}
+.populaire
+{
+    width: 420px;
+    height:625px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+/*si largeur entre 768px et 992 px */
+@media (min-width:768px) and (max-width:992px){
+    
+    .populaire
+    {
+     width:100%;
+     height: auto;
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 40px;
+    
+
+}
+}
+/*si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+    .populaire
+    {
+         width:100%;
+         height: auto;
+        display: flex;
+       flex-direction: column;
+       margin:0 auto;
+       
+    }
+    
+}
+/* si largeur est supérieur à 992px */
+.popular{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 40px;
+    
+}
+/* si largeur entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px) {
+
+.popular
+  {
+    width:95%;
+     height: auto;
+    display: flex;
+    flex-direction: row;
+    
+    
+  }  
+}
+/* si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+.popular
+    {
+         width: 100%;
+         height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+/*regles par défaut  si device est supérieur à 992px*/
+.popular_hôtel
+{
+   
+   width: 343;
+   height: 144px; 
+   display: flex;
+   background: #FFFFFF;
+   border: 5px solid #FFFFFF;
+   border-radius: 20px;
+   border-radius: 20px;
+   margin-bottom:33px ;
+   margin-left: 37px;
+   padding-bottom: 0px;
+   padding-left: 0px;
+   padding-top: 0px;
+   cursor: pointer;
+   
+
+   
+}
+.popular_hôtel:hover
+{
+    transform: scale(1.02); 
+}
+/* si device entre 768px et 992px*/
+@media (min-width:768px) and (max-width:992px) {
+  .popular_hôtel
+   {
+    
+    width:95%;
+    display: flex;
+    background:#FFFFFF;
+    border-radius: 20px;
+    padding-bottom: 0px;
+     padding-left: 0px;
+     padding-top: 0px;
+     
+     
+    
+    
+    
+   }
+    
+}
+/* si device est inférieur à 768 px */
+@media all and (max-device-width:768px) {
+  .popular_hôtel  
+    {
+        display: flex;
+        width: 90%;
+        background:#FFFFFF;
+        border: 5px solid #FFFFFF ;
+        border-radius: 20px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-left: 10px;
+        
+        
+
+    }
+    
+}
+.description_hotel
+{
+    
+    width:60%;
+    height: auto;
+}
+/*si largeur est supérieur à 992px */
+.popular_hôtel img
+{
+    width: 137px;
+    height: 144px;
+    background: #FFFFFF;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom:0px;
+    box-sizing: border-box;
+
+}
+ 
+
+/* si largeur est entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px){
+
+
+.popular_hôtel img 
+{
+    
+    width:100%;
+    height:100%;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+
+}
+}
+/* autres regles si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+.popular_hôtel img
+{   
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom:0px;
+    box-sizing: border-box;
+
+    
+}
+
+    
+}
+.price1_night
+{
+    width: 169px;
+    height: 16px;
+    margin-bottom: 44px;
+    margin-top: 7px;
+    margin-left: 10px;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 400;
+    flex: none;
+    order: 1;
+    flex-grow:0;
+    color: #000000;
+
+}
+/* si largeur entre 768 px et 992px */
+
+@media (min-width:768px) and (max-width:992px) {
+    .price1_night
+    {   display: flex;
+       flex-wrap: wrap;
+        margin-top: 7px;
+        margin-bottom: 44px;
+        margin-left: 10px;
+        margin-right: 13px;
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-weight: 400;
+        flex: none;
+        order: 1;
+        flex-grow:0;
+        color: #000000;
+    }
+}
+
+/*autres regles si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) { 
+    .price1_night
+    {
+    width: 169px;
+    height: 38px;
+    margin-top: 7px;
+    margin-bottom: 24px;
+    margin-left: 10px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    flex: none;
+    order: 1;
+    flex-grow:0;
+    color: #000000;
+}
+    
+    
+}
+.price2_night
+{
+    width: 169px;
+    height: 16px;
+    margin-bottom: 41px;
+    margin-top: 7px;
+    margin-left: 15px;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 400;
+    flex: none;
+    order: 1;
+    flex-grow:0;
+    color: #000000;
+
+}
+/*valeur si largeur entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px) {
+    .price2_night
+    {
+        
+    display: flex;
+     flex-direction: column;
+    margin-top: 7px;
+    margin-left: 15px;
+    margin-bottom: 24px;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 400;
+    flex: none;
+    order: 1;
+    flex-grow:0;
+    color: #000000;
+    }
+}
+/*autres regles si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) { 
+    .price2_night
+    {
+    width: 169px;
+    height: 38px;
+    margin-top: 7px;
+    margin-bottom: 34px;
+    margin-left: 10px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    flex: none;
+    order: 1;
+    flex-grow:0;
+    color: #000000;
+}
+    
+    
+}
+.price3_night
+{
+    width: 169px;
+    height: 16px;
+    margin-bottom: 64px;
+    margin-top: 7px;
+    margin-left: 15px;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 400;
+    flex: none;
+    order: 1;
+    flex-grow:0;
+    color: #000000;
+
+}
+/* si largeur entre 768 px et 992px */
+
+@media (min-width:768px) and (max-width:992px) {
+    .price3_night
+    {   display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 54px;
+        margin-top: 7px;
+        margin-left: 15px;
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-weight: 400;
+        flex: none;
+        order: 1;
+        flex-grow:0;
+        color: #000000;
+
+    
+}
+}
+/*autres regles si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) { 
+    .price3_night
+    {
+    
+    height: 19px;
+    margin-top: 7px;
+    margin-bottom: 54px;
+    margin-left: 10px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    flex: none;
+    order: 1;
+    flex-grow:0;
+    color: #000000;
+}
+    
+    
+}
+/* valeur par défaut */
+.description_popular1
+{
+    width: 111px;
+    height:hug(38px);
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 16px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 22px;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    order: 0;
+    flex-grow:0;
+    
+    
+}
+/* si largeur entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px) {
+
+    .description_popular1
+{
+    
+    width:95%;
+    margin-left: 10px;
+    margin-right: 13px;
+    margin-top: 12px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    
+
+}
+}
+
+/* si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+
+    .description_popular1
+{
+    width: 169px;
+    height:hug(38px);
+    margin-left: 15px;
+    margin-right: 22px;
+    margin-top: 12px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+    
+}
+}
+
+/* valeur par défaut */
+.description_popular2
+{
+    width: 169px;
+    height:hug(38px );
+    font-family: 'Raleway';
+    font-size: 16px;
+    margin-top: 16px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 22px;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+}
+/* si largeur entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px) {
+
+    .description_popular2
+{
+    width:90%;
+    height:hug(57px);
+    margin-left:10px;
+    margin-right: 13px;
+    margin-top: 12px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    
+}
+}
+
+/* si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+
+    .description_popular2
+{
+    
+    height:hug (38px);
+    margin-left: 15px;
+    margin-top: 12px;
+    margin-right: 22px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap-;
+    
+    
+}
+}
+/* valeur par défaut */
+.description_popular3
+{
+    width: 169px;
+    height:hug (19px);
+    margin-top: 16px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 22px;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+/* si largeur entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px) {
+
+    .description_popular3
+{
+    width:95%;
+    margin-right: 13px;
+    margin-left: 10px;
+    margin-right: 13px;
+    margin-top: 12px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    
+}
+}
+
+/* si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+
+    .description_popular3
+{
+    width: auto;
+    height:hug (38px);
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 12px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+}
+}
+
+
+.étoiles
+{
+display:flex;
+flex-wrap: nowrap;
+margin-left: 15px;
+
+}
+
+
+/* si largeur entre 768px et 992px */
+@media (min-width:768px ) and (max-width:992px) {
+    .étoiles
+    {
+     display:flex;
+     flex-wrap: nowrap;
+     margin-left: 10 px;
+     align-content: flex-end;
+     margin-bottom: 12px;
+     
+
+    }
+    
+}
+/*lorsque largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+    .étoiles
+    {
+        display:flex;
+     flex-wrap: nowrap;
+     margin-left: 10px;
+
+     
+     
+     
+    }
+    
+}
+.popular a
+{
+    text-decoration: none;
+    color: #000000;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+/*autres regles si largeur est supérieur à 992 px */
+#évenement_marseille
+{
+    width: 1339px;
+    height: 493px;
+    padding-top: 42px;
+    padding-bottom: 34px;
+    background: #FFFFFF;
+    
+    
+}
+/*autres regles si device entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px) {
+    #évenement_marseille
+    {
+        width: 95%;
+        height: auto;
+        background:#FFFFFF;
+        padding-top: 34px;
+        padding-bottom: 48px;
+        margin-left: 0px;
+        justify-content: space-between;
+        margin:0 auto;
+        
+        
+    }
+    
+}
+
+
+/*si device est inférieur à 768px */
+@media all and (max-device-width:768px) {
+
+    #évenement_marseille
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 45px;
+        padding-top: 34px;
+        padding-bottom: 47px;
+        display: flex;
+       flex-direction: column;
+        margin: 0 auto;
+        background: #FFFFFF;
+    
+    }
+}
+
+
+/*si device est supérieur à 992 px */
+.activity_marseille
+{
+    width:auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+/*autres regles si largeur est entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px){
+    .activity_marseille
+    {
+        width:auto;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        
+        
+        
+    }
+    
+}
+/*si device est inférieur à 768 px */
+@media all and (max-device-width:768px) {
+    .activity_marseille
+
+    { 
+         width: 90%;
+         height: auto;
+          display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin:0 auto;
+        background: #FFFFFF;
+
+        
+        
+    }
+    
+}
+
+#évenement_marseille h3
+{
+    width: 212px;
+    height: 30.02px;
+    padding-left: 0px;
+    padding-bottom: 18.47px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    color:#000000;
+    
+}
+
+/*autres regles si device est infériuer à 768px */
+@media all and (max-device-width:768px) {
+    #évenement_marseille h3 
+    {
+        width: 216px;
+        height: 30px;
+        margin-left: 50px;
+        margin-bottom: 18.47;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #000000;
+
+    }
+    
+}
+
+
+/*si largeur est superieur à 992px */
+.vieux_port
+{
+
+ display: block;
+ width: 302px;
+ background:#FFFFFF ;
+ height: 444.51px;
+ border:1px solid #F2F2F2;
+ border-radius: 20px;
+ 
+ 
+ 
+}
+
+/*si largeur entre 768px et 992px*/
+@media (min-width:768px) and (max-width:992px) {
+    .vieux_port
+    {
+         width:23%;
+         height:auto;
+        display: block;
+        border:1px solid #F2F2F2;
+        border-radius: 20px;
+        
+        
+    }
+    
+}
+/*si device est inférieurv à 768px */
+@media all and (max-device-width:768px) {
+    .vieux_port
+    {
+        display: block;
+        width:100%;
+        height: auto;
+        background: #FFFFFF;
+        border:5px solid #F2F2F2 ;
+        border-radius: 20px;
+        margin-bottom: 24px;
+        
+        
+    }
+    
+}
+.vieux_port:hover
+{
+   transform: scale(1.02);
+}
+
+/* si largeur est supérieur à 992px */
+.fort_de_pomegues
+{
+ display: block;
+ background: #FFFFFF;
+ width: 302px;
+ height: 445px;
+ border:1px solid #F2F2F2;
+ border-radius: 20px;
+ 
+}
+.fort_de_pomegues:hover
+{
+    transform: scale(1.02);
+}
+/*si largeur entre 768px et 992px*/
+@media (min-width:768px) and (max-width:992px) {
+    .fort_de_pomegues
+    {
+        width:23%;
+        height:auto;
+        display:block;
+        background: #FFFFFF;
+        border:1px solid #F2F2F2;
+        border-radius: 20px;
+        margin-right:0px;
+        
+        
+    }
+    
+}
+/*si device est inférieurv à 768px */
+@media all and (max-device-width:768px) {
+    .fort_de_pomegues
+    {
+        width:100%;
+        height: auto;
+        display: block;
+        background: #FFFFFF;
+        border:1px solid #F2F2F2;
+        border-radius: 20px;
+        margin-bottom: 24px;
+        margin-left: 0px;
+    }
+    
+}
+
+
+/* si largeur est supérieur à 992px */
+.parc
+{
+ display: block;
+ background: #FFFFFF;
+ width: 302px;
+ height: 444.51px;
+ border:1px solid #F2F2F2;
+ border-radius: 20px;
+ 
+ 
+ 
+}
+
+/*si largeur entre 768px et 992px*/
+@media (min-width:768px) and (max-width:992px) {
+    .parc
+    {
+        width:23%;
+         height: auto;
+        display: block;
+        background: #FFFFFF;
+        border:1px solid #F2F2F2;
+        border-radius: 20px;
+        
+        
+    }
+    
+}
+/*si device est inférieurv à 768px */
+@media all and (max-device-width:768px) {
+    .parc
+    {
+        width:100%;
+        height:auto;
+        display: block;
+        background: #FFFFFF;
+        border:1px solid #F2F2F2;
+        border-radius: 20px;
+        margin-bottom: 24px;
+        margin-left: 0px;
+    }
+    
+}
+.parc:hover{
+    transform: scale(1.02);
+}
+/* si largeur est supérieur à 992px */
+.notre_dame
+{
+ display: block;
+ background: #FFFFFF;
+ width:302px;
+ height: 445px;
+ border:1px solid #F2F2F2;
+ border-radius: 20px;
+}
+/*si largeur entre 768px et 992px*/
+@media (min-width:768px) and (max-width:992px) {
+    .notre_dame
+    {
+        width:23%;
+         height: 100%;
+        background: #FFFFFF;
+        border:1px solid #F2F2F2;
+        border-radius: 20px;
+        
+    }
+    
+}
+/*si device est inférieurv à 768px */
+@media all and (max-device-width:768px) {
+    .notre_dame
+    {
+        width:100%;
+        height: auto;
+        background: #FFFFFF;
+        border:1px solid #F2F2F2;
+        border-radius: 20px;
+        margin-left:0px;
+        
+    }
+    
+}
+.notre_dame:hover
+{
+    transform: scale(1.02);
+}
+/*valeur par defaut*/
+.activity_marseille img
+{
+    width: 302px;
+    height: 389px;
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+/* si largeur et entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px){
+    .activity_marseille img 
+     {
+        width: 100%;
+        background: #FFFFFF;
+        border-radius: 20px 20px 0px 0px;
+     }
+    
+}
+
+/* si largeur est inférieur à 768px */
+@media  all and (max-device-width:768px){
+    .activity_marseille img 
+     {
+        width: 100%;
+        background: #F2F2F2;
+        border-radius: 20px 20px 0px 0px solid #ffff;
+        object-fit: cover ;
+     }
+    
+}
+.vieux_port p,.fort_de_pomegues p,.parc p,.notre_dame p
+{
+    width: 247px;
+    height: 15px;
+    margin-left:19px;
+    margin-bottom: 20.51px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color:#000000;
+}
+/* autres regles si device entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px) {
+    .parc p {
+width: 136px;
+height: 40;
+line-height: 19px;
+font-size: 16px;
+font-weight: 700;
+font-family: 'Raleway';
+margin-bottom:19px;
+color:#000000;
+    }
+    
+}
+/* autres regles si device est inférieur à 768px*/
+@media all and  (max-device-width:768px)  {
+    .parc p {
+width: 90%;
+height: 40;
+margin-left: 19px;
+line-height: 19px;
+font-size: 16px;
+font-weight: 700;
+font-family: 'Raleway';
+margin-bottom:19px;
+color:#000000;
+    }
+    
+}
+/*autres valeur si largeur entre 768px et 992px */
+@media (min-width:768px) and (max-width:992px) {
+    .notre_dame p
+    {
+        width: 127px;
+        height: 38px;
+        line-height: 19px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'Raleway';
+        margin-bottom:7px;
+        color:#000000;
+    }
+    
+}
+/*autres valeur si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+    .notre_dame p
+    {
+        width: 90%;
+        height: 38px;
+        margin-left: 19px;
+        line-height: 19px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'Raleway';
+        margin-bottom:7px;
+        color:#000000;
+    }
+    
+}
+.activity_marseille a
+{
+    text-decoration: none;
+    color: #000000;
+    
+}
+/*regles par défaut ( si device est supérieur à 992px*/
+footer
+{
+     width: 1339px;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    color:#000000;
+    padding-top: 45px;
+    
+}
+/*autres regles pour device est supérieur à 768px */
+@media (min-width:768px) and (max-width:992px) {
+    footer 
+    {width: 100%;
+        height: auto;
+        background: #F2F2F2;
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
+@media all and (max-device-width:768px) {
+    footer{
+        width:100%;
+        height:auto;
+        margin:0 auto;
+        background:#F2F2F2;
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 45px;
+        padding-left:30px ;
+
+        
+    }
+    
+}
+/*valeur par défaut*/
+.footer_titre1
+{
+    width: 77px;
+    height: 21px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    margin-left:0px;
+    margin-right:270px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    font-style: normal;
+    font-family: 'Raleway';
+}
+
+/*si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+    
+
+.footer_titre1
+{
+    width: 77px;
+    height: 21px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    margin-left:0px;
+    margin-right:270px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    font-style: normal;
+    font-family: 'Raleway';
+}
+}
+/*par défaut */
+.footer_titre2
+{
+    width: 166px;
+    height: 21px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    font-style: normal;
+    font-family: 'Raleway';
+    
+
+}
+
+/* par défaut */
+
+.footer_titre3
+{
+   
+    
+    width: 94px;
+    height: 21px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    margin-right:250px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    font-style: normal;
+    font-family: 'Raleway';
+}
+
+/*si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+    
+
+.footer_titre2
+{
+    width: 166px;
+    height: 21px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left:0px;
+    margin-right:270px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    font-style: normal;
+    font-family: 'Raleway';
+    
+
+}
+}
+/* par défaut */
+
+.footer_titre3
+{
+   
+    
+    width: 94px;
+    height: 21px;
+    margin-left:0px;
+    margin-top: 51px;
+    margin-bottom: 20px;
+    margin-right:250px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    font-style: normal;
+    font-family: 'Raleway';
+}
+
+/*si largeur est inférieur à 768px */
+@media all and (max-device-width:768px) {
+    
+
+.footer_titre3
+{
+   
+    
+    width: 94px;
+    height: 21px;
+    margin-left:0px;
+    margin-top: 51px;
+    margin-bottom: 20px;
+    margin-right:250px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    font-style: normal;
+    font-family: 'Raleway';
+}
+}
+
+.footer_titre
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    
+
+}
+.footer_titre p
+{
+    padding-bottom: 12px;
+    
+}
